@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"gorm.io/gorm/utils"
+	"github.com/notofir/gorm/utils"
 )
 
 var ErrRecordNotFound = errors.New("record not found")

@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
+	"github.com/notofir/gorm"
+	"github.com/notofir/gorm/clause"
 )
 
 func Query(db *gorm.DB) {

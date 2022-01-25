@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/schema"
-	. "gorm.io/gorm/utils/tests"
+	"github.com/notofir/gorm"
+	"github.com/notofir/gorm/schema"
+	. "github.com/notofir/gorm/utils/tests"
 )
 
 func TestMigrate(t *testing.T) {

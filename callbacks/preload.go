@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
-	"gorm.io/gorm/schema"
-	"gorm.io/gorm/utils"
+	"github.com/notofir/gorm"
+	"github.com/notofir/gorm/clause"
+	"github.com/notofir/gorm/schema"
+	"github.com/notofir/gorm/utils"
 )
 
 func preload(db *gorm.DB, rel *schema.Relationship, conds []interface{}, preloads map[string][]interface{}) {

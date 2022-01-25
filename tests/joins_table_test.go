@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
+	"github.com/notofir/gorm"
+	"github.com/notofir/gorm/clause"
 )
 
 type Person struct {

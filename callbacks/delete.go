@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"strings"
 
-	"gorm.io/gorm"
-	"gorm.io/gorm/clause"
-	"gorm.io/gorm/schema"
-	"gorm.io/gorm/utils"
+	"github.com/notofir/gorm"
+	"github.com/notofir/gorm/clause"
+	"github.com/notofir/gorm/schema"
+	"github.com/notofir/gorm/utils"
 )
 
 func BeforeDelete(db *gorm.DB) {

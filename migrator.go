@@ -1,8 +1,8 @@
 package gorm
 
 import (
-	"gorm.io/gorm/clause"
-	"gorm.io/gorm/schema"
+	"github.com/notofir/gorm/clause"
+	"github.com/notofir/gorm/schema"
 )
 
 // Migrator returns migrator
