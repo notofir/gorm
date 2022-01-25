@@ -82,7 +82,10 @@ func Create(config *Config) func(db *gorm.DB) {
 				db.Statement.Context, db.Statement.SQL.String(), db.Statement.Vars...,
 			)
 			if db.AddError(err) == nil {
+				dest := db.Statement.Dest
+				db.Statement.Dest = db.Statement.ReflectValue.Addr().Interface()
 				gorm.Scan(rows, db, mode)
+				db.Statement.Dest = dest
 				db.AddError(rows.Close())
 			}
 
